@@ -7,3 +7,6 @@
 [submodule "selecom_servido"]
 	path = selecom_servido
 	url = git@gitlab.linkaform.com:develop/selecom_servido.git
+[submodule "PlazaRepositorio"]
+	path = PlazaRepositorio
+	url = git@github.com:Coordinadorplaza/PlazaRepositorio.git
