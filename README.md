@@ -1,5 +1,5 @@
 ### Para actualizar el proyecto y descargar todos los sub proyectos
-git clone git@gitlab.linkaform.com:develop/servido_custom.git
+git clone git@github.com:linkaform/servido_custom.git
 cd custom/
 for module in $(grep path .gitmodules  | awk '{ print $3 }'); do
    git submodule update --init $module
