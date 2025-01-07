@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Cocheros</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="bootstrap.css" rel="stylesheet">
+        <link href="syles.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../styles/css/sweetalert2.min.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body>
+        <div class="container">
+            <img src="https://f001.backblazeb2.com/file/app-linkaform/public-client-126/71202/60b81349bde5588acca320e1/627e8741ace40877f72fd5ce.jpg" alt="Cocheros" style="max-width:100%;height: auto;">
+        </div>  <br> 
+
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="container">
+                <p style="font-size: 18px;">Cocheros en tu camino agradece su interés en nuestra franquicia, lo invitamos agendar una cita con uno de nuestros asesores comerciales con el fin de brindarle más información y resolver sus inquietudes.</p>
+                <p style="font-size: 20px;font-weight: bold;color: black;">Seleccione una opción para agendar su cita:</p>
+            </div>
+            <form id="infosyncForm">
+                <input  id="calendly_comercial" type="text" data-infosync-id="622fe1d3b2b16f8e32a00d14" style="display: none;" required/>
+                <input type="hidden" id="infosyncFormID" value="82421"/>
+                <input type="text" id="infosyncRecordID" style="display: none;" />
+                <input type="text" id="analistValue" value="false" style="display: none;" />
+                <input  infosycCatalogId="620efc488ecfef48e272d131" onChange="getCatalog(82421,81912, 2)" id="catalog-81912-level-1" type="text" data-infosync-id="620efc74c2cd91ae6274d359" style="display: none;" required />
+                <input  infosycCatalogId="620efc488ecfef48e272d131"   id="catalog-81912-level-2" type="text" data-infosync-id="620efc74c2cd91ae6274d35a" style="display: none;" required/>
+                <p class="infosync-field-error" data-infosync-error-id="620efc74c2cd91ae6274d359"></p>
+                <p class="infosync-field-error" data-infosync-error-id="620efc74c2cd91ae6274d35a"></p>
+                <p class="infosync-field-error" data-infosync-error-id="622fe1d3b2b16f8e32a00d14"></p>
+            </form>
+
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div id="catalog-81912-level-3"  class="offset-md-2 col-sm-6 form-group row">
+                    </div>
+                    <div id="buttons-div" style="margin:0px;" class="row">
+                        <div style="margin-right: auto;margin-left: auto;margin-bottom: 15px;" class="col-sm-12 col-md-5 col-lg-5 btn btn-default btn-lg " onclick="sendTipoCita('videoconferencia',0);" id="btn1">Videoconferencia</div>
+                        <div style="margin-right: auto;margin-left: auto;margin-bottom: 15px;" class="col-sm-12 col-md-5 col-lg-5 btn btn-default btn-lg " onclick="getFile()" id="btn2">Presencial</div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div id="calendly_uno" class="calendly-inline-widget" style="min-width:320px; height:580px;padding-left: 50px;padding-right: 50px;" data-auto-load="false"></div>
+        </div>
+        <div  class="container">
+            <div class="row mx-auto" style="margin-top:20%;">
+                <div class="col-sm-12 col-md-2 col-lg-2 btn btn-primary btn-lg" onclick="window.location.href = 'https://quieroser.cocheros.com.co/noticias.php';" style=" margin-left: auto;" id="button_exit">Salir</div>
+            </div>
+            <div class="row" >
+                <div class="col-lg-12 col-sm-12 col-xs-12 pt-5"></div>
+                <div class="col-lg-2 col-sm-2 col-xs-2 col-6 text-center" style="background-color:#244d61">
+                    <a style="text-decoration:none" href="https://www.instagram.com/cocheroscol/" target="_blank" ><img class="img-fluid" src="https://f001.backblazeb2.com/file/app-linkaform/public-client-126/71202/60b81349bde5588acca320e1/627e876bb9f2fc1c0e451e2f.jpg" alt="Instagram Cocheros"></a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2 col-xs-2 col-6 text-center" style="background-color:#244d61">
+                    <a style="text-decoration:none" href="https://www.facebook.com/CocherosCol/" target="_blank" ><img class="img-fluid" src="https://f001.backblazeb2.com/file/app-linkaform/public-client-126/71202/60b81349bde5588acca320e1/627e875a045912313c2fd5b6.jpg" alt="Facebook Cocheros"></a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 col-xs-12 text-center"  style="background-color:#244d61">
+                    <a style="text-decoration:none" href="http://www.cocheros.com.co" target="_blank" ><img class="img-fluid" src="https://f001.backblazeb2.com/file/app-linkaform/public-client-126/71202/60b81349bde5588acca320e1/627e87775b8df2b6dcb37f4d.jpg" alt="Web Cocheros"></a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 col-xs-12 text-center"  style="background-color:#244d61">
+                    <a style="text-decoration:none" href="http://www.somoscocheros.com" target="_blank" ><img class="img-fluid" src="https://f001.backblazeb2.com/file/app-linkaform/public-client-126/71202/60b81349bde5588acca320e1/627e878a92ceeada59b37e58.jpg" alt="Web SomosCocheros"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="http://servido.org/embed/infosync-public.js"></script>
+<script type="text/javascript" src="../../styles/js/sweetalert2.all.min.js"></script>
+<script src="./infosync-cocheros.js"></script>
+<script type="text/javascript">var urlParams = urlParamstoJson();</script>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
