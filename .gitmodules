@@ -3,7 +3,7 @@
 	url = git@github.com:luis-tor/pci.git
 [submodule "cocheros"]
 	path = cocheros
-	url = git@gitlab.linkaform.com:develop/cocheros.git
+	url = git@github.com:linkaform/cocheros.git
 [submodule "selecom_servido"]
 	path = selecom_servido
 	url = git@gitlab.linkaform.com:develop/selecom_servido.git
